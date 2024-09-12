@@ -1,3 +1,4 @@
 .idea
 
 #docker exec -it guests-php-1 sh
+#docker compose up --force-recreate

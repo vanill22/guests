@@ -1,0 +1,50 @@
+###
+
+# curl -X POST http://localhost:8000/api/guests
+#     -H "Content-Type: application/json"
+#     -d '{"first_name":"Иванов",
+#    "last_name":"Vasya", "email":"vasya2009@mail.com", "phone":"+7234567890"}'
+POST http://localhost:8000/api/guests
+Content-Type: application/json
+
+{
+    "first_name": "Vasya",
+    "last_name": "Иванов",
+    "email": "vasya2009@mail.com",
+    "phone": "+7234567290"
+}
+
+###
+
+# curl -X DELETE http://localhost:8000/api/guests/6
+DELETE http://localhost:8000/api/guests/1
+
+###
+
+# curl -X GET http://localhost:8000/api/guests/1
+GET http://localhost:8000/api/guests/1
+
+###
+
+# curl -X GET http://localhost:8000/api/guests
+GET http://localhost:8000/api/guests
+
+###
+
+# curl -X PUT http://localhost:8000/api/guests/1
+#     -H "Content-Type: application/json"
+#     -d '{"first_name":"Иванов",
+#    "last_name":"Vasya", "email":"vasya2009@mail.com", "phone":"+7234567890"}'
+PUT http://localhost:8000/api/guests/2
+Content-Type: application/json
+
+{
+    "first_name": "Vasya212121",
+    "last_name": "Иванов",
+    "email": "vasya2009@mail.com",
+    "phone": "+7234567290"
+}
+
+###
+
+
